@@ -1,0 +1,16 @@
+[package]
+name = "named-pipes-example"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+axum = "0.7.4"
+serde = { version = "1.0.193", features = ["derive"] }
+surrealdb = { path = "../.." ,features = ["kv-mem"]}
+thiserror = "1.0.50"
+tokio = { version = "1.34.0", features = ["macros", "rt-multi-thread"] }
+hyper = { version= "1.2.0"}
+hyper-util = {version = "0.1.3",  features = ["full"]}
+tower = { version = "0.4", features = ["util"] }
+ctrlc = "3.4.4"

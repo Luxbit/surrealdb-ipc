@@ -37,6 +37,8 @@ members = [
     "lib/examples/actix",
     "lib/examples/axum",
     "lib/examples/rocket",
+    "lib/examples/unix_sockets",
+    "lib/examples/named_pipes",
 ]
 
 [profile.release]
